@@ -80,3 +80,29 @@ Por ejemplo, encontramos un artículo que dice **¿Qué hay de nuevo en Python 3
 Vamos a ver algo muy interesante, para ellos damos click en **Índice PED**. PEP 0 -- Index of Python Enhancement Proposals (PEPs). Las Propuestas de Mejora de Python, son los Documentos que conforman a toda la guía de estilos de lenguaje, es decir son los que nos dicen a nosotros cómo el lenguaje funciona y como nosotros  deberíamos escribirlo de manera correcta, los PEPs son muchísimos  son Documentos característicos de Python pero el más importante, el que debes leer, es el **PEP 8** titulado **Style Guide for Python Code** por **GvR, Warsaw, Coghlan**. Esta es la famosa guía  de estilos de Python. Si le damos click vamos a enconrar Un Documento bastante largo que nos explica cómo nosotros deberíamos escribir Python, todas las buenas prácticas que tenemos que tener en cuenta para hacer que la programación sea correcta, como deberíamos escribir los nombres de las clases por ejemplo, cuales deberían de ser las maneras de escribir los comentarios, como nosotros deberíamos trabajar la identación en el lenguaje, etc. Todo lo que tiene que ver con estilos los vas a encontrar en este PEP 8.
 
 La Documentación puede llegar a ser muy abrumadora, la información esta puesta de una manera muy, muy técnica, y es una opción que existe, es verdad tu puedes ir a la Documentación cuando quieres entender algo complejo de lenguaje o no, puedes buscarlo en Google y solucionar tus problemas, que particularmente es lo que hago yo, yo no soy un desarrollador que es muy fan de ir a la Documentación y buscar la solución ahí. Per más sin embargo, hay muchos desarrolladores que sí, y es mi trabajo presentarte todas las opciones que tienes disponibles para poder abordar la solución de un problema.
+
+# ¿Qué es un entorno virtual?
+
+Antes de enternder qué es un entorno virtual, hay que recordar el concepto de **Modulo**. Básicamente un modulo es código escrito por otra persona que a nosotros nos sirve para resolver un problema de manera rápida, es decir para no reinventar la rueda, para nosotros no desarrollar una función que hizo otro desarrollador, aprovechamos el trabajo que este mismo ha realizado y lo incorporamos a nuestro código, eso es un modulo. Entonces ahora sí podemos enterder que es un entorno virtual, y para eso quiero que me acompañes con esta serie de gráficos, porque es un concepto que a veces cuesta entender pero si prestas atención lo vas a entender al 100%.
+
+![](https://i.imgur.com/8Ztt4kR.png)
+
+Quiero que pienses en tú computadora, tu tienes ahí tu computadora, tienes Python instalado y tienes diferentes proyectos, seguramente ya has construidos varios, en el anteriro nosotros hicimos una prueba de primalidad, trabajamos con un software que lo que hacía eres descubrir si una palabra era un palindromo o no, ya hicimos varios proyectos. Ahora estos proyectos funcionan dentro del Python que nosotros tenemos dentro de nuestra computadora, tenemos el lenguaje de programación instalado de manera global, y todos estos proyectos para funcionar utilizan a este lenguaje de programación. Este lenguaje tiene varios **modulos** verdad, podemos tenemos un modulo 1, un modulo 2, un modulo 3, etc. Pero ¿que pasá cuando se actualizan los modulos? y aquí surje un problema muy característico. Supongamos que el moduelo 2 sufre una actualización:
+
+![](https://i.imgur.com/TDIcJXH.png)
+
+Nuestro proyecto 1 funciona bien, porque estamos usando código que todavía en la actualización realmente esta funcionando, por lo tanto no hay problema, nuestro proyecto 2, nuestro proyecto 3 funcionan bien, pero el proyecto 4 falla. ¿Por qué? Porque el proyecto 4 justo tiene una línea de código que se elminó en la nueva versión del modulo 2. Y ¿Cómo resolvemos este problema? Nosotros necesitamso el moduelo actualizado para poder trabajar, para poder hacer las cosas bien, pero no podemos aceptar que uno de los proyectos empiece a fallar, tenemos que solucionarlo de algúna forma. Bueno, aquí es donde entra el concepto de **Entorno virtual**, y para eso quiero que observes este gráfico:
+
+![](https://i.imgur.com/fuTvy74.png)
+
+A diferencia del gráfico anterior, quiero que te fijes que tenemos un Python para cada uno de los proyectos, es decir, es como si nosotros tomaramos el lenguaje de programación y lo clonaramos en varios lenguajes independientes, que funcionan con cada uno de los proyectos de manera univoca, y además, en cada uno de los proyectos tenemos a esos modulos que teníamos antes, el modulo 1, el modulo 2, el modulo 3. Por lo tanto ¿que pasaría si nosotros tenemos a una versión única de python funcionando con cada proyecto?
+
+![](https://i.imgur.com/znLbW8Q.png)
+
+Que si nosotros ahora actualizamos cada uno de los modulos, podemos elegir en que versión de python lo actualizamos y en cual no, por lo tanto la versión que python que esta corriendo con el proyecto 4, no va a tener esta actualización porque nosotros ya sabemos que rompe con el proyecto, pero en los otros sí. De esa manera soloucionamos el problema que teníamos al principio y obtenemos ahora sí, el concepto de entorno virtual:
+
+![](https://i.imgur.com/2pqjwyC.png)
+
+Un entorno virtual es lo que viste en el gráfico. Es ese Python aislado para un solo proyecto que tiene sus propios modulos y esta pensado para funcionan únicamente con ese proyecto. Eso es un entorno virtual.
+
+Con este concepto listo, si ya comprendes qué es un entorno virtual ¡ya estas listo para poder crear uno!
