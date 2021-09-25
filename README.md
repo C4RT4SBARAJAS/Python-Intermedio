@@ -106,3 +106,38 @@ Que si nosotros ahora actualizamos cada uno de los modulos, podemos elegir en qu
 Un entorno virtual es lo que viste en el gráfico. Es ese Python aislado para un solo proyecto que tiene sus propios modulos y esta pensado para funcionan únicamente con ese proyecto. Eso es un entorno virtual.
 
 Con este concepto listo, si ya comprendes qué es un entorno virtual ¡ya estas listo para poder crear uno!
+
+# El primer paso profesional: creación de un entorno virtual.
+
+Ya no conoces lo que es un entorno virtual, un python aislado para cada proyecto con sus propios modulos, a continuación te voy a enseñar como crearlo:
+
+1. Abre tu consola de tipo Unix, y dirigite a tu **Home**. Puedes ubicarte en el Ditectorio que más te convega, porque vamos a hacer solamente un ejemplo para entender el concepto.
+2. A continuación vamos a crear una Carpeta con el comando ``mkdir``, y le vamos a poner de nombre ***proyecto_ejemplo***, y entramos a esa Carpeta con el comando ``cd``. Normalmente cuando creas un proyecto en Python, tu creas una carpeta para ese proyecto, y empiezas a escribir todo el código ahí dentro. Bueno, ya sabemos lo qué es un entorno virtual y que, no vamos a usar el Python que esta instalado en nuestra computadora de manera global. Sino que vamos a crear un Python específico para este proyecto que también va a vivir dentro de esta Carpeta. Eso es lo que vamos a hacer a continuación.
+3. Como buenas prácticas vamos a **inicializar** a esta carpeta **como un repositorio de Git**. Para ello vamos a utilizar el comando ``git init``.
+4. Antes de crear el **entorno virtual**, tenemos que, **instalar venv** para Python 3, utilizando un entorno WSL 20.04.
+- Paso 1: Realizar la actualización y la renovación.` 
+Primero actualice y renueve su sistema para asegurarse de que la versión de Python 3 que recibió esté actualizada.
+Para hacerlo utilizamos primero el comando``sudo apt update`` y después el comando ``sudo apt -y upgrade``.
+- Paso 2: Comprobar la versión de Python.
+Compruebe la versión de Python 3 instalada escribiendo el siguiente comando: ``python3 -V``. Obtendrá un resultado similar al siguiente, según el momento en que haya actualizado su sistema: Python 3.8.10.
+- Paso 3: Instalar pip.
+Para administrar paquetes de software de Python, instale pip, una herramienta que le ayudará a instalar y administrar bibliotecas o módulos que se utilizarán en sus proyectos. Para hacerlo utilizamos el comando: ``sudo apt install -y ython3-pip``.
+- Paso 4: Instalar virtualenv.
+Virtualenv es una herramienta usada para crear un entorno Python aislado. Este entorno tiene sus propios directorios de instalación que no comparten bibliotecas con otros entornos virtualenv o las bibliotecas instaladas globalmente en el servidor. Virtualenv es la manera más fácil recomendada para configurar un ambiente personalizado Python.  Para instalar virtualenv usando pip3 utilizamos el siguiente comando: ``pip3 install virtualenv``.
+- Paso 5: Instalar venv.
+Los entornos virtuales le permiten disponer de un espacio aislado en su servidor para proyectos de Python. Utilizaremos venv, parte de la biblioteca estándar de Python 3, que podemos instalar escribimos el siguiente comando: ``sudo apt install -y python3-venv``. Ahora estamos listos para crear nuestro primer entorno virtual.
+
+5. Lo siguiente que vamos a hacer una vez que tenemos el repositorio inicializado y el venv intalado en WSL 20.04, es **crear el entorno virtual**, es decir vamos a crear un Python nuevo dentro de esta carpeta que solamente nos va a servir para este proyecto y en el cuál van a vivir todos nuestros modulos. Para hacerlo escribimos el comando ``python3 -m venv <nombre del entorno virtual>`` y damos Enter. El comando ``python3`` no permite abrir la consola interactiva de Python, ``-m`` es un lo que en programación denominamos un *flag*, una bandera, es un indicativa que le dice al comando que vamos a modificar el funcionamiento original por otra cosa. Particularmente en Python ``-m`` signifa *modulo*, es decir, vamos a llamar a un modulo interno del lenguaje, y en ``<nombre del entorno virtual>`` es el nombre que le vamos a poner al entorno virtual. Generalmente el nombre que más se acostumbra a poner en la comunidad de Python es **venv**, Virtual Environment o Entorno Virtual es lo que **venv** significa. Una vez que hicimos este comando vamos a esperar unos segundos, y lo que va a pasar es que, se va a crear una carpeta donde va a vivir un Python específico para este proyecto, y en el que nosotros vamos a poder instalar y actualizar los modulos a gusto, sin tocar el Python que vive globalmente en nuestra computadora. 
+6. A continuación, tenemos que activar a ese Python interno para que nuestra consola no trabaje con el que esta en nuestra computadora. Para activar el entorno virtual utilizamos el comando ``source <nombre del entorno virtual>/bin/activate``, siendo en Unix **la carpeta bin** donde esta el comando para poder activar el entorno virtual. Después de dar Enter, ahora su línea de comandos llevará el nombre de su entorno virtual como prefijo: ``(venv) hcartas@LIBERO:~/proyecto_ejemplo$``, esto significa que estamos utilizando el entorno virtual de la carpeta que tiene de nombre **venv**, por lo tanto ahora cuando utilizamos Python dentro el proyecto, ya no estamos utilizando el Python global, el de nuestra computadora, sino que estamos utilizado un Python clonado, que solamente funciona en este proyecto. Escribir ``source <nombre del entorno virtual>/bin/activate`` es algo muy molesto para estar activando y desactivando el entorno virtual siempre. Entonces, lo que podemos hacer es crear un alias, el cúal es un acortamiento de este comando para que te sea más fácil escribirlo. Para crear el alias podemos hacer uso del siguiente comando: ``alias <nombre del alias>="source <nombre del entorno virtual>/bin/activate"``, el cuál se guarda de manera temporal durante tu sesión actual en la Terminal.
+7. Ahora podemos probar el entorno virtual abriendo el intérprete de Python utilizando el comando ``python`` dentro del entorno virtual. Tenga en cuenta que dentro del entorno virtual de Python 3 puede utilizar el comando ``python`` en vez de python3 y el comando ``pip`` en vez de pip3. Como ejemplo podemso escribir lo siguiente:
+```python
+>>> print("Hello, World!")
+```
+8. Para desactivar el entorno virtual primero cierre el intérprete de Python con:
+```python
+>>> quit()
+```
+Luego, cierre el entorno virtual con el comando ``deactivate``, de la siguiente forma: ``(venv) hcartas@LIBERO:~/proyecto_ejemplo$ deactivate``. Y listo.
+
+Ya sabes cómo crear un entorno virtual y cómo entrar al mismo. Son dos pasos diferentes, primero creamos un entorno virtual y después lo activamos, entramos a trabajar con el mismo.
+
