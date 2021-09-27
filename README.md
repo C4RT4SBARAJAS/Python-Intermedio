@@ -141,3 +141,15 @@ Luego, cierre el entorno virtual con el comando ``deactivate``, de la siguiente 
 
 Ya sabes cómo crear un entorno virtual y cómo entrar al mismo. Son dos pasos diferentes, primero creamos un entorno virtual y después lo activamos, entramos a trabajar con el mismo.
 
+# Instalación de dependencias con pip.
+
+¿Qué es PIP dentro de Python?
+Para entenderlo volvamos de nuevo al concepto de modulo, ¿recuerdas el modulo ramdom en el que nosotros trabajamos en el curso anterior, con el cuál nosotros utilizabamos algunas funciones especiales para trabajar con la aleatoriedad? Dentro de Python nosotros tenemos un montón de modulos, es decir un montón de código escrito por otras personas que nosotros podemos aprovechar para nuestros proyectos. Pero ¿qué pasa? Hay ciertos modulos que están dentro de Python, es decir que cuando nosotros intalamos Python o cuando creamos un entorno virtual, un Python particular para un proyecto, nosotros ya los tenemos intalados, ya vienen de fabrica. Sin embargo, hay ciertos modulos, hay cierto otros códigos escritso otras personas que no están de fabrica con Python, y que nosotros tenemos que instalarlas de manera externa. ¿Cómo nosotros logramos hacer esto? Bueno podemos utiliza un manejaador de dependencias, un instalador de paquetes si le queremos poner ese nombre, el más popular dentro de Python es PIP (Package Installer for Python). Y es un modulo que viene dentro de Python, que esta pensado para que nosotros podamos instalar otros moduelos que no vienen dentro de Python, eso es lo qué es PIP.
+
+Dentro de esos modulos populares que nosotros no tenemso dentro de Python pero que si se usan mucho en proyectos podemos encontrar varios proyectos, algunos de ellos son:
+
+- Requests: Modulo popular para hacer una tarea denominada Web Scraping.
+- BeautifulSoup4: Modulo popular para hacer una tarea denominada Web Scraping.
+- Pandas: Se utiliza en la Cienca de Datos para poder trabajar justamente Datos, llevarlos a Python, limpiarlos, manejarlos, acomodarlos en la manera en que nosotros lo necesitemos para poder hacer nuestro trabajo.
+- Numpy: trabajar justamente Datos, llevarlos a Python, limpiarlos, manejarlos, acomodarlos en la manera en que nosotros lo necesitemos para poder hacer nuestro trabajo.
+- Pytest: Otro modulo popular que nos sirver para realizar Testing, un concepto avanzado de programación.
