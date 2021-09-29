@@ -165,4 +165,20 @@ Pero ojo, hay un caso particular, ¿qué pasa si quieres compartir este proyecto
 3. Ahora que tenemos este archivo, cuándo llegué la hora compartir el proyecto con otro persona, subirlo a GitHub y después descargalo. Lo únuco que va a tener que hacer la persona con nuestro proyecto, es escribir el siguiente comando: ``pip install -r requirements.txt``. Si hay una persona que esta trabajando con nuestro proyecto por primera vez, cuando ejecute el anterior comando se van a instalar exactamente los mismos modulos que teniamos en nuestra computadora.
 
 Además de PIP, existen otros manejadores de paquetes, otros instaladores de dependencias dentro del lenguaje de programación Python. PIP es el mas popular, y es el que nosotros vamos a encontrar de fabrica dentro del lenguaje. Pero hay otras alternativas, como PYEN y PYENV. Son un poquito más complejos que PIP, tiene un funcionamiento un poca más complicados, hay que aprender algunos otros comandos, pero en cierta manera mejoran un poco lo que son las funcionanlidades de PIP. Sin embargo, la mayoría de las veces vas a usar PIP, y es por eso que nos quedamos con este manejador de paquetes.
-- Pytest: Otro modulo popular que nos sirver para realizar Testing, un concepto avanzado de programación.
+
+# Una alternativa: Anaconda.
+
+Ya sabes cómo crear un entorno virtual con el modulo ``venv``, y además, sabes cómo instalar dependencias con el modulo ``pip``. Existe una alternativa, particular y muy famosa denominada **Anaconda**, una distrubución especial de Python. Anaconda es un software, completo, pensado para los científicos de datos. Si tu interes es meterte en ciencia de datos, anaconda es muy probable que lo vallas a tocar en algún momento. Esta es una distrubución especial de Python que nos permite hacer lo que ya aprendimos, **crear un entorno virtual**, **instalar dependencias**, pero **de manera gráfica**. Pero ojo, solo te va a servir para ciencia de datos, si intentas hacer Backend por ejemplo, con Python, no sería la mejor opción, y ahí lo mejor que podrías hacer es utilizar PIP.
+
+A continuación, veamos cómo instalarla y ejecutarla en tu sistema operativo:
+
+2. Nos dirigimos al sitio web de [Anaconda](https://www.anaconda.com/products/individual "Anaconda").
+3. Damos click en Download para Windows Python 3.8 64-Bit Graphical Installer 477 MB.
+4. Abrimos el archivo descargado y se nos abrirá el instalador. 
+5. Y como es clasico en Windows vamos a darle *Next*, 
+6. Click en *I agree*, 
+7. Click en *Just Me (recommended)* y *Next*, 
+8. Después nos mostrará la carpeta donde vamos a instalar el software, yo te recomiendo dejarlo como viene por defecto y damos en Next. 
+9. A continuación vamos a desmarcar los dos checks que vienen por defecto: *Add anaconda3 to my PAHT-environment variable* y *Register Anaconda3 as my default Python 3.8* . Es importante que lo hagas porque sino se te va a romper todo Python que tenas instalado en tu computadora, no marques estos checks si ya tienes instalado Python en tu PC. Y por último damos click en *Install*. 
+
+Una vez que el proceso de instalación termine vamos a tener el software instaldo completamente en nuestra computadora. Al cual podemos acceder desde el menú inicio escribiendo *Anaconda Navigator*. Al hacer click nos lleva al fotware principal de Anaconda en el cuál nosotros vamos a poder encontrar como poder hacer todo estas tareas que ya te mencione, crear un entorno virtual e instalar dependencias.
