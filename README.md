@@ -172,13 +172,38 @@ Ya sabes cómo crear un entorno virtual con el modulo ``venv``, y además, sabes
 
 A continuación, veamos cómo instalarla y ejecutarla en tu sistema operativo:
 
-2. Nos dirigimos al sitio web de [Anaconda](https://www.anaconda.com/products/individual "Anaconda").
-3. Damos click en Download para Windows Python 3.8 64-Bit Graphical Installer 477 MB.
-4. Abrimos el archivo descargado y se nos abrirá el instalador. 
-5. Y como es clasico en Windows vamos a darle *Next*, 
-6. Click en *I agree*, 
-7. Click en *Just Me (recommended)* y *Next*, 
-8. Después nos mostrará la carpeta donde vamos a instalar el software, yo te recomiendo dejarlo como viene por defecto y damos en Next. 
-9. A continuación vamos a desmarcar los dos checks que vienen por defecto: *Add anaconda3 to my PAHT-environment variable* y *Register Anaconda3 as my default Python 3.8* . Es importante que lo hagas porque sino se te va a romper todo Python que tenas instalado en tu computadora, no marques estos checks si ya tienes instalado Python en tu PC. Y por último damos click en *Install*. 
+1. Nos dirigimos al sitio web de [Anaconda](https://www.anaconda.com/products/individual "Anaconda").
+
+![](https://i.imgur.com/Cf0yxqX.png)
+
+2. Damos click en Download para Windows Python 3.8 64-Bit Graphical Installer 477 MB.
+
+![](https://i.imgur.com/Pn9GIMv.png)
+
+3. Abrimos el archivo descargado y se nos abrirá el instalador. Y como es clasico en Windows vamos a darle *Next*,
+
+![](https://i.imgur.com/IcZDfkP.png)
+  
+4. Click en *I agree*,
+
+![](https://i.imgur.com/ImTtOzC.png)
+
+5. Click en *Just Me (recommended)* y *Next*, 
+
+![](https://i.imgur.com/uo0YP0j.png)
+
+6. Después nos mostrará la carpeta donde vamos a instalar el software, yo te recomiendo dejarlo como viene por defecto y damos en Next.
+
+![](https://i.imgur.com/wGlJjKy.png)
+
+7. A continuación vamos a desmarcar los dos checks que vienen por defecto: *Add anaconda3 to my PAHT-environment variable* y *Register Anaconda3 as my default Python 3.8* . Es importante que lo hagas porque sino se te va a romper todo Python que tenas instalado en tu computadora, no marques estos checks si ya tienes instalado Python en tu PC. Y por último damos click en *Install*. 
+
+![](https://i.imgur.com/tFXFSOb.png)
 
 Una vez que el proceso de instalación termine vamos a tener el software instaldo completamente en nuestra computadora. Al cual podemos acceder desde el menú inicio escribiendo *Anaconda Navigator*. Al hacer click nos lleva al fotware principal de Anaconda en el cuál nosotros vamos a poder encontrar como poder hacer todo estas tareas que ya te mencione, crear un entorno virtual e instalar dependencias.
+
+![](https://www.anaconda.com/imager/assetsdo/Products/Product-Screenshots/5736/navigator-screenshot_680db6b6f11f9cc710dd7defae241cd3.png)
+
+Una vez que haya cargado **Anaconda**, vamos a poder hacer todo lo que te enseñe anteriormente pero de manera gráfica. Ojo, orientado para Ciencia de Datos, si estas haciendo otra cosa, como Backend o Seguridad Informática no sería tu mejor opción utilizar Anaconda.
+
+Cómo crear un entorno virtual y cómo crear dependencias en Anaconda:
