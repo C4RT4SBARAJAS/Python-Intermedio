@@ -207,3 +207,38 @@ Una vez que el proceso de instalación termine vamos a tener el software instald
 Una vez que haya cargado **Anaconda**, vamos a poder hacer todo lo que te enseñe anteriormente pero de manera gráfica. Ojo, orientado para Ciencia de Datos, si estas haciendo otra cosa, como Backend o Seguridad Informática no sería tu mejor opción utilizar Anaconda.
 
 Cómo crear un entorno virtual y cómo crear dependencias en Anaconda:
+
+1. Para eso vamos a irnos a la pestaña **Enviroments**. Donde vamos a poder crear un entorno virtual, y nos mostrará los entornos que ya hemos creado.
+
+![](https://i.imgur.com/3KFZ1qS.png)
+
+2. Vamos a dar click en **Create**.
+
+![](https://i.imgur.com/BjwQrei.png)
+
+3. En *Name* vamos a ponerle un nombre a este entorno virtual. En *Packages* vamos a elegir que lenguaje vamos a utilizar. También nos da la opción de utilizar R, que es un lenguaje popular en la Ciencia de datos. Particularmente nosotros nos vamos a ir por Python y podemos elegir la versión. Vamor a ir por la versión más actual que tenga Anaconda, y damos click en *Create*. Y ahora vamos a esperar a que el entorno virtual se cree.
+
+![](https://i.imgur.com/IS7X9KG.png)
+
+4. Te vas a dar cuenta de que, Anaconda a diferencia de PIP ya nos instala algunas dependencias de base. Ahora para instalar Pandas utilizando Anaconda vamos a irnos al menu, damos click en *Installed* y cambiamos por *All*.
+
+![](https://i.imgur.com/NaYjwJh.png)
+
+5. A continuación, damos click en *Update index*, y esto lo que va hacer es movernos a nosotros al índice que tiene Anaconda de todas las dependencias posibles que nosotros podemos instalar, porque son muchísimas. Entonces una vez que termine este proceso, nosotros ya podemos por fin instalar *Pandas*.
+
+![](https://i.imgur.com/wPjIaGI.png)
+
+
+6. Una vez que ha termindo el proceso vamos a dar un click en input *Search Packages*, y vamos a escribir Pandas, estos nos va a llevar a una serie de moduelos que tienen el nombre pandas en su nombre. 
+
+![](https://i.imgur.com/lMcMjza.png)
+
+7. Nosotros vamos a buscar el Pandas normal y damos un click en el Check, y vamos a dar un click en el boton *Aply*. Que lo que va a hacer es instalarnos esta dependencia en este entorno virtual que acabamso de creear llamado *proyecto2*. 
+
+![](https://i.imgur.com/hSq7xhp.png)
+
+8. Y damos cick en *Aply* nuevamente. Vamos a esperar a que este proceso termine y una vez que eso este listo vamos a tener un proyecto virtual denominda proyecto2 con el modulo Pandas, todo utilizando Anaconda, sin necesidad de utilizar PIP. Es tu decisión el que quieras usar.
+
+![](https://i.imgur.com/GvU4gqr.png)
+
+Te convertiste en un experto en entornos virtuales. Sabes cómo crear los mismos utilizando el modulo venv o instalar dependencias utilizando el modulo PIP.Además, te mostré una alternativa, Anaconda, porque si estas interesado en meterte en Ciencia de Datos la manera correcta de instalar entornos virtuales y dependencias es utilizando este software.
